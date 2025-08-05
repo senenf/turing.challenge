@@ -1,0 +1,51 @@
+name: turing-challenge
+
+channels:
+  - defaults
+  - conda-forge
+
+dependencies:
+  - pip
+  - python=3.10
+  - setuptools
+  - wheel
+  - poppler
+  - ipykernel
+  - mido
+  - fluidsynth
+  - pip:
+    - notebook
+    - pandas
+    - numpy==1.26.4 #For Vision compatibility
+    - matplotlib
+    - scikit-learn
+    - seaborn
+    - music21
+    - fastapi[standard]
+    - uvicorn 
+    - boto3 
+    - lxml
+    - jsonlines
+    - python-dotenv
+    ## MIDI
+    - python-rtmidi
+    - simpleaudio
+    - pyfluidsynth
+    ## LLM
+    - langchain
+    - langchain-community
+    - langchain-experimental
+    - langchain_chroma
+    - openai
+    - langchain-openai
+    - gradio
+    - chromadb
+    ## Docs
+    - pymupdf
+    - pypdf
+    ## Images
+    - pillow
+    ##Vision
+    - torch==2.1.1
+    - torchvision==0.16.1
+    - opencv-python==4.7.0.72

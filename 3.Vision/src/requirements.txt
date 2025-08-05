@@ -1,0 +1,16 @@
+fastapi
+uvicorn
+requests
+pandas
+psutil
+pyyaml
+tqdm
+pillow
+seaborn
+scikit-learn
+matplotlib
+ipython
+torch==2.1.1
+torchvision==0.16.1
+numpy==1.26.4
+opencv-python==4.7.0.72
