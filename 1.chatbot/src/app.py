@@ -60,6 +60,7 @@ def setup_environment():
     else:
         print("📦 Chroma DB already initialized.")
 
+setup_environment()
 
 # Load PDFs
 def get_available_pdfs():
@@ -249,5 +250,5 @@ with gr.Blocks(css="""
 )
 
 
-setup_environment()
+
 app.launch()
