@@ -24,7 +24,7 @@ load_dotenv("utils/.env")
 # Ensure folders exist and DB is initialized
 def setup_environment():
     # Create folders if they don't exist
-    os.makedirs("../src/sample_data", exist_ok=True)
+    os.makedirs("../sample_data", exist_ok=True)
     os.makedirs("../src/db", exist_ok=True)
 
     # Check if the DB already exists by looking for Chroma DB index
