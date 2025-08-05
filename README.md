@@ -19,6 +19,7 @@ conda env list
 conda activate turing-challenge
 ```
 
+> _Note: remember to add your OPENAI_API_KEY [here](./1.chatbot/src/utils/.env)_
 ## 1. [Chatbot Overview](./1.chatbot/)
 
 ### Interface
@@ -88,7 +89,7 @@ conda activate turing-challenge
 - Indexed with multimodal metadata
 
 **Forms**  
-- _Planned but not implemented yet_
+- Extraction of information is done through this [notebook](./1.chatbot/notebooks/Index_upload_data.ipynb). The example is based on a official government document to obtain the TIE card.
 
 ---
 
