@@ -10,7 +10,7 @@ from datetime import datetime
 from chatbot.chat import chat_with_agent
 from chatbot.memory import get_memory
 
-from langchain.vectorstores import Chroma
+from langchain_chroma import Chroma
 from langchain_openai import OpenAIEmbeddings
 
 from pipeline.loader import load_pdf_chunks
@@ -32,12 +32,8 @@ def setup_environment():
     if not os.path.exists(chroma_index_file):
         print("🛠️ Initializing Chroma vector database...")
 
-        from langchain.vectorstores import Chroma
-        from langchain.embeddings import OpenAIEmbeddings
-        from dotenv import load_dotenv
-
         # Load env vars
-        load_dotenv("../src/utils/.env")
+        load_dotenv("utils/.env")
         openai_api_key = os.getenv("OPENAI_API_KEY")
         embedding_json = os.getenv("EMBEDDING_MODELS_JSON")
         if not embedding_json:
@@ -55,7 +51,6 @@ def setup_environment():
             embedding_function=embedding,
             persist_directory="../src/db"
         )
-        db.persist()
         print("✅ Chroma vector DB initialized.")
     else:
         print("📦 Chroma DB already initialized.")
