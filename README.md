@@ -126,7 +126,7 @@ Refer to the [Q&A document](./2.QA/qa.md).
 The app is a `FastAPI` application containerized in a Docker image. The `detection` endpoint exposes a YOLO v9-e focused on two classes: human and car.
 
 
-Start by building the docker.
+Start by building the docker (requires Docker Desktop for Windows)
 ````
 docker build -t yolov9-detector .
 ````
