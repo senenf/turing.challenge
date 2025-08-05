@@ -107,7 +107,7 @@ def process_images(image_metadata_list: List[dict]) -> List[Document]:
             metadata={
                 "page_number": page,
                 "image_file": filename,
-                "source": source_pdf,  # ✅ correctly matched to uploaded PDF
+                "source": source_pdf,   
                 "type": "image",
                 "path": image_path
             }
