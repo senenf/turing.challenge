@@ -59,7 +59,7 @@ setup_environment()
 
 # Load PDFs
 def get_available_pdfs():
-    return [f for f in os.listdir("sample_data") if f.endswith(".pdf")]
+    return [f for f in os.listdir("../sample_data") if f.endswith(".pdf")]
 
 pdfs = get_available_pdfs()
 
@@ -158,7 +158,7 @@ def upload_and_index_pdf(uploaded_file):
             persist_directory="db",
             embedding_function=OpenAIEmbeddings(openai_api_key=os.getenv("OPENAI_API_KEY"))
         )
-        vectordb.persist()  # force write
+        #vectordb.persist()  # force write
         print("✅ Chroma DB persisted successfully.")
     except Exception as e:
         print(f"⚠️ Error persisting vector DB: {e}")
