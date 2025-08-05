@@ -64,7 +64,7 @@ setup_environment()
 
 # Load PDFs
 def get_available_pdfs():
-    return [f for f in os.listdir("../sample_data") if f.endswith(".pdf")]
+    return [f for f in os.listdir("sample_data") if f.endswith(".pdf")]
 
 pdfs = get_available_pdfs()
 
