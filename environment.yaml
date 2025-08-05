@@ -11,8 +11,6 @@ dependencies:
   - wheel
   - poppler
   - ipykernel
-  - mido
-  - fluidsynth
   - pip:
     - notebook
     - pandas
@@ -20,17 +18,12 @@ dependencies:
     - matplotlib
     - scikit-learn
     - seaborn
-    - music21
     - fastapi[standard]
     - uvicorn 
     - boto3 
     - lxml
     - jsonlines
     - python-dotenv
-    ## MIDI
-    - python-rtmidi
-    - simpleaudio
-    - pyfluidsynth
     ## LLM
     - langchain
     - langchain-community
